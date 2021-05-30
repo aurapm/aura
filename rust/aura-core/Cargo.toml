@@ -1,0 +1,14 @@
+[package]
+name = "aura-core"
+version = "0.1.0"
+authors = ["Colin Woodbury <colin@fosskers.ca>"]
+edition = "2018"
+
+[dependencies]
+alpm = "1.1.7"
+aura-arch = { path = "../aura-arch" }
+chrono = { version = "0.4", features = ["serde"] }
+itertools = "0.10"
+petgraph = { version = "0.5", default-features = false }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
